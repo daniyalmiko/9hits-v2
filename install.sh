@@ -283,11 +283,11 @@ else
             while read choice
             do
                 case $choice in
-                    "show adult pages") adultpages="allow"
+                    "show adult pages") adultpages="deny"
                     ;;
                     "show popups") pupups="allow"
                     ;;
-                    "allow Coin Mining") coinMn="allow"
+                    "allow Coin Mining") coinMn="deny"
                     ;;
                     *)
                     ;;
@@ -426,7 +426,7 @@ else
                 fi
                 if [ -z "${11}" ]
                 then
-                    adultpages="allow"
+                    adultpages="deny"
                 else
                     adultpages=${11}
                 fi
